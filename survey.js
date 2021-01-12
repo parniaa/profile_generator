@@ -6,8 +6,10 @@ const rl = readline.createInterface({
 });
 
 rl.question('What do you think of Node.js? ', (answer) => {
-  console.log(`Thank you for your valuable feedback: ${answer}`);
-  // console.log(rl);
-  rl.close();
-  
+  rl.question("what is this?", (answer1) => {
+    rl.question("what is that?", (answer3) => {
+      console.log(`Thank you for your valuable feedback: ${answer} ${answer1} ${answer3} `);
+      rl.close();
+    })
+  })
 });
